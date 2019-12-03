@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="col-10 offset-1">
+    <ul class = "list-inline d-flex justify-content-between col-8 offset-2">
+        <li class = "list-inline-item">Fullness: @ViewBag.Full</li>
+        <li class = "list-inline-item">Happiness: @ViewBag.Happy</li>
+        <li class = "list-inline-item">Meals: @ViewBag.Meals</li>
+        <li class = "list-inline-item">Energy: @ViewBag.Energy</li>
+    </ul>
+    <div class = "d-block border border-dark text-center p-2">
+        <img src="@ViewBag.ImgPath" alt = "Dojodachi" class = "w-25">
+        <p class = "mt-2 text-success">@ViewBag.Message</p>
+    </div>
+    <ul class = "list-inline @ViewBag.Display1 justify-content-between mt-4 col-8 offset-2">
+        <li class = "list-inline-item"><a href = "/feed" class = "btn btn-primary">Feed</a></li>
+        <li class = "list-inline-item"><a href = "/play" class = "btn btn-success">Play</a></li>
+        <li class = "list-inline-item"><a href = "/work" class = "btn btn-danger">Work</a></li>
+        <li class = "list-inline-item"><a href = "/sleep" class = "btn btn-secondary">Sleep</a></li>
+    </ul>
+    <a href = "/reset" class = "btn btn-primary col-2 offset-5 mt-4 @ViewBag.Display2">Restart?</a>
+</div>
