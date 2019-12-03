@@ -50,7 +50,7 @@ namespace DojoDachi.Controllers
                 Random rand = new Random();
                 HttpContext.Session.SetInt32("Meals",(int)HttpContext.Session.GetInt32("Meals") - 1);
                 if (rand.Next(4) == 0) {
-                    HttpContext.Session.SetString("Message","Your Dojodachi's being a salty bastard. Meals - 1");
+                    HttpContext.Session.SetString("Message","Your Dojodachi's a little salty. Meals - 1");
                     HttpContext.Session.SetString("Status","Angry");
                 }
                 else {
@@ -73,7 +73,7 @@ namespace DojoDachi.Controllers
                 Random rand = new Random();
                 HttpContext.Session.SetInt32("Energy",(int)HttpContext.Session.GetInt32("Energy") - 5);
                 if (rand.Next(4) == 0) {
-                    HttpContext.Session.SetString("Message","Your Dojodachi's being a salty bastard. Energy - 5.");
+                    HttpContext.Session.SetString("Message","Your Dojodachi's a little salty. Energy - 5.");
                     HttpContext.Session.SetString("Status","Angry");
                 }
                 else {
